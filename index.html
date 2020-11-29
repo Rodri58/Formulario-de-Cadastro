@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastros</title>
+    <link href="estilo.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="menu">
+        <a clas="ativo" href="#">Home</a>
+        <a href="#produtos">Nossos Carros</a>
+        <a href="#clientes">Login</a>
+    </div>
+    <div class="form"> 
+        <form name="frmCliente">
+            <legend><h2><b style="color: black;"> Formulário de Cadastro Para Locação</b></h2></legend>
+            <fieldset>
+            <legend><h3><b style="color: black;"> Informações Pessoais </b></h3></legend>
+            
+            <div class="form-group">
+                
+                <input type="radio" name="citizenship" />
+                <label class="right-inline">Brasileiro</label>
+
+                <input type="radio" name="citizenship" />
+                <label class="right-inline">Estrangeiro</label>
+
+                <label class="right-inline">CPF/Passaporte:</label>
+                <input class="input-control" type="text" size="8" maxlength="11" placeholder="CPF" id="cpf-passaporte" />
+
+                <label class="right-inline">Nome Completo:</label>
+                <input class="input-control" type="text" size="13" placeholder="Nome Completo" id="nome" />
+            
+                Sexo: <input type="radio" name="citizenship" /> 
+                      <label class="right-inline">Masculino</label>
+
+                      <input type="radio" name="citizenship" />
+                      <label class="right-inline">Feminino</label>
+                
+                <label class="right-inline">Data de Nascimento:</label>
+                <input class="input-control" type="date"  size="16" id="date"/>
+                       
+            </div>
+        </fieldset>
+        <div class="form">
+            <form name="frmCliente">
+                <fieldset>
+                <legend><h3><b style="color: black;"> Endereço </b></h3></legend>
+                <div class="form-group">
+                    <label class="right-inline">CEP:</label>
+                    <input class="input-control" type="text" size="7"placeholder="CEP da Rua" id="cep" />
+
+                    <label class="right-inline">Endereço:</label>
+                    <input class="input-control" type="text" size="30" placeholder="Nome da Rua" id="endereco" />
+
+                    <label class="right-inline">Numero:</label>
+                    <input class="input-control" type="text" size="12" maxlength="4" placeholder="Número da Casa" id="Numero" />
+
+                    <label class="right-inline">Complemento:</label>
+                    <input class="input-control" type="text" size="15" placeholder="EX:Cor do Portão" id="complemento" /></br>
+
+                    <label class="right-inline">Bairro:</label>
+                    <input class="input-control" type="text" size="17" placeholder="Bairro Onde Você Mora" id="Bairro" />
+
+                </div>
+            </fieldset>
+    </form> 
+   
+        <div class="form">
+            <form name="frmCliente">
+                <fieldset>
+                    <legend><h3><b style="color: black;"> Forma de Contato </b></h3></legend>
+                    <div class="form-group">
+                        <label class="right-inline">Telefone:</label>
+                <input class="input-control" type="tel" size="10" maxlength="10" placeholder="Telefone Fixo" id="telefone" />
+
+                <label class="right-inline">Celular:</label>
+                <input class="input-control" type="tel" size="13" maxlength="11" placeholder="Número do Celular" id="Celular" />
+
+                <label class="right-inline">E-mail:</label>
+                <input class="input-control" type="email" size="20" placeholder="E-mail" id="email" />
+
+                <label class="right-inline">Confirmação de E-mail:</label>
+                <input class="input-control" type="email" size="20" placeholder="Confirme Seu E-mail" id="confirmacao-email" />
+                    </div>
+                </fieldset>
+            </form>
+            <div class="form">
+                <form name="frmCliente">
+                    <fieldset>
+                        <legend><h3><b style="color: black;"> Cadastre Sua Senha </b></h3></legend>
+                        <div class="form-group">
+                            <label class="right-inline">Senha:</label>
+                            <input class="input-control" type="password" size="8" maxlength="8" placeholder="8 Dígitos" id="senha" />
+        
+                            <label class="right-inline">Confirmar Senha:</label>
+                            <input class="input-control" type="password" size="8" maxlength="8" placeholder="8 Dígitos"oonfirmar-senha" />
+                        </div>
+                    </fieldset>
+                    </form>
+                    
+                </form>
+    </div>
+    <div class="form-group">
+        <label></label>
+        <button id="salvar">💾Salvar</button>
+        <button id="cancelar">❌Cancelar</button>
+    </div>
+    <label></label>
+    <div id="listagem"></div>
+    <script src="cliente.js"></script>
+</body>
+</html>
